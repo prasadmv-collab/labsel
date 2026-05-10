@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Brijesh-ue/MyMavenSeleniumChrome01.git'
+                git branch: 'main', url: 'https://github.com/prasadmv-collab/labsel.git'
             }
         }
 
@@ -33,7 +33,7 @@ stage('Check Target Folder') {
        
        stage('Run Application') {
     steps {
-        sh 'java -jar target/MyMavenSeleniumApp01-1.0-SNAPSHOT.jar'
+        sh 'java -jar target/labsel-1.0-SNAPSHOT.jar'
     }
 }
         
